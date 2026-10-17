@@ -5,7 +5,7 @@ import time;
     
 
 port = serial.Serial("/dev/ttyAMA0", baudrate=115200, timeout=3.0);
-def get_response();
+def get_response():
   while True:
     response = port.read(1000);
     if (response != "".encode("utf-8"))
